@@ -12,14 +12,6 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-    },
-    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('./layouts/Dashboard/Dashboard.vue'),
@@ -30,19 +22,39 @@ export default new Router({
       component: () => import('./layouts/Login/Login.vue'),
     },
     {
-      path: '/core',
-      name: 'core',
-      component: () => import('./components/core/CoreTest/CoreTest.vue'),
+      path: '/home',
+      name: 'home',
+      component: () => import('./layouts/Home/Home.vue'),
     },
     {
-      path: '/grid',
-      name: 'grid',
-      component: () => import('./components/business/GridDemo/GridDemo.vue'),
+      path: '/about',
+      name: 'about',
+      component: () => import('./layouts/About/About.vue'),
     },
     {
-      path: '/core',
-      name: 'core',
-      component: () => import('./components/core/CoreTest/CoreTest.vue'),
+      path: '/teachers',
+      name: 'teachers',
+      component: () => import('./layouts/Teachers/Teachers.vue'),
+    },
+    {
+      path: '/courses',
+      name: 'courses',
+      component: () => import('./layouts/Courses/Courses.vue'),
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: () => import('./layouts/Gallery/Gallery.vue'),
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('./layouts/Blog/Blog.vue'),
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('./layouts/Contact/Contact.vue'),
     },
     {
       path: '/404',
