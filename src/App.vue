@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
-      <router-link to="/dashboard">Dashboard</router-link> |
-      <router-link to="/core">Core Components</router-link> |
-      <router-link to="/grid">Grid</router-link>
+      <router-link to="/">Home</router-link>| <router-link to="/about">About</router-link>|
+      <router-link to="/teachers">Teachers</router-link>|
+      <router-link to="/courses">Courses</router-link>|
+      <router-link to="/gallery">Gallery</router-link>| <router-link to="/blog">Blog</router-link>|
+      <router-link to="/contact">Contact</router-link>
     </div>
     <router-view></router-view>
   </div>
