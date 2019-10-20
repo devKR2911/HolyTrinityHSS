@@ -1,69 +1,69 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Vue from "vue";
+import Router from "vue-router";
+import AppHeader from "./layout/AppHeader";
+import AppFooter from "./layout/AppFooter";
+import Components from "./views/Components.vue";
+import Landing from "./views/Landing.vue";
+import Login from "./views/Login.vue";
+import Register from "./views/Register.vue";
+import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
 
 export default new Router({
+  linkExactActiveClass: "active",
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
+      path: "/",
+      name: "components",
+      components: {
+        header: AppHeader,
+        default: Components,
+        footer: AppFooter
+      }
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: () => import('./layouts/Dashboard/Dashboard.vue'),
+      path: "/landing",
+      name: "landing",
+      components: {
+        header: AppHeader,
+        default: Landing,
+        footer: AppFooter
+      }
     },
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('./layouts/Login/Login.vue'),
+      path: "/login",
+      name: "login",
+      components: {
+        header: AppHeader,
+        default: Login,
+        footer: AppFooter
+      }
     },
     {
-      path: '/home',
-      name: 'home',
-      component: () => import('./layouts/Home/Home.vue'),
+      path: "/register",
+      name: "register",
+      components: {
+        header: AppHeader,
+        default: Register,
+        footer: AppFooter
+      }
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./layouts/About/About.vue'),
-    },
-    {
-      path: '/teachers',
-      name: 'teachers',
-      component: () => import('./layouts/Teachers/Teachers.vue'),
-    },
-    {
-      path: '/courses',
-      name: 'courses',
-      component: () => import('./layouts/Courses/Courses.vue'),
-    },
-    {
-      path: '/gallery',
-      name: 'gallery',
-      component: () => import('./layouts/Gallery/Gallery.vue'),
-    },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('./layouts/Blog/Blog.vue'),
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('./layouts/Contact/Contact.vue'),
-    },
-    {
-      path: '/404',
-      name: '404',
-      component: () => import('./layouts/PageNotFound/PageNotFound.vue'),
-    },
-    {
-      path: '*',
-      redirect: '/404',
-    },
+      path: "/profile",
+      name: "profile",
+      components: {
+        header: AppHeader,
+        default: Profile,
+        footer: AppFooter
+      }
+    }
   ],
+  scrollBehavior: to => {
+    if (to.hash) {
+      return { selector: to.hash };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
 });
