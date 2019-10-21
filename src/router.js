@@ -1,69 +1,144 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Vue from "vue";
+import Router from "vue-router";
+import AppHeader from "./layout/AppHeader";
+import AppFooter from "./layout/AppFooter";
+import Components from "./views/Components.vue";
+import Landing from "./views/Landing.vue";
+import Login from "./views/Login.vue";
+import Register from "./views/Register.vue";
+import Profile from "./views/Profile.vue";
+import Home from "./views/Home/Home.vue";
+import Teachers from "./views/Teachers/Teachers.vue";
+import About from "./views/About/About.vue";
+import Contact from "./views/Contact/Contact.vue";
+import Courses from "./views/Courses/Courses.vue";
+import Blog from "./views/Blog/Blog.vue";
+import Gallery from "./views/Gallery/Gallery.vue";
+import HTSSNavBar from "./components/Shared/NavBar/NavBar.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
+  linkExactActiveClass: "active",
+  routes: [{
+      path: "/",
+      name: "components",
+      components: {
+        header: AppHeader,
+        default: Components,
+        footer: AppFooter
+      }
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: () => import('./layouts/Dashboard/Dashboard.vue'),
+      path: "/landing",
+      name: "landing",
+      components: {
+        header: AppHeader,
+        default: Landing,
+        footer: AppFooter
+      }
     },
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('./layouts/Login/Login.vue'),
+      path: "/login",
+      name: "login",
+      components: {
+        header: AppHeader,
+        default: Login,
+        footer: AppFooter
+      }
     },
     {
-      path: '/home',
-      name: 'home',
-      component: () => import('./layouts/Home/Home.vue'),
+      path: "/register",
+      name: "register",
+      components: {
+        header: AppHeader,
+        default: Register,
+        footer: AppFooter
+      }
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./layouts/About/About.vue'),
+      path: "/profile",
+      name: "profile",
+      components: {
+        header: AppHeader,
+        default: Profile,
+        footer: AppFooter
+      }
     },
     {
-      path: '/teachers',
-      name: 'teachers',
-      component: () => import('./layouts/Teachers/Teachers.vue'),
+      path: "/home",
+      name: "home",
+      components: {
+        header: HTSSNavBar,
+        default: Home,
+        footer: AppFooter
+      }
     },
     {
-      path: '/courses',
-      name: 'courses',
-      component: () => import('./layouts/Courses/Courses.vue'),
+      path: "/teachers",
+      name: "teachers",
+      components: {
+        header: HTSSNavBar,
+        default: Teachers,
+        footer: AppFooter
+      }
     },
     {
-      path: '/gallery',
-      name: 'gallery',
-      component: () => import('./layouts/Gallery/Gallery.vue'),
+      path: "/about",
+      name: "about",
+      components: {
+        header: HTSSNavBar,
+        default: About,
+        footer: AppFooter
+      }
     },
     {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('./layouts/Blog/Blog.vue'),
+      path: "/blog",
+      name: "blog",
+      components: {
+        header: HTSSNavBar,
+        default: Blog,
+        footer: AppFooter
+      }
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('./layouts/Contact/Contact.vue'),
+      path: "/contact",
+      name: "contact",
+      components: {
+        header: HTSSNavBar,
+        default: Contact,
+        footer: AppFooter
+      }
     },
     {
-      path: '/404',
-      name: '404',
-      component: () => import('./layouts/PageNotFound/PageNotFound.vue'),
+      path: "/courses",
+      name: "courses",
+      components: {
+        header: HTSSNavBar,
+        default: Courses,
+        footer: AppFooter
+      }
     },
     {
-      path: '*',
-      redirect: '/404',
-    },
+      path: "/gallery",
+      name: "gallery",
+      components: {
+        header: HTSSNavBar,
+        default: Gallery,
+        footer: AppFooter
+      }
+    }
   ],
+  scrollBehavior: to => {
+    if (to.hash) {
+      return {
+        selector: to.hash
+      };
+    } else {
+      return {
+        x: 0,
+        y: 0
+      };
+    }
+  }
 });
