@@ -8,6 +8,12 @@ import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
 import Home from "./views/Home/Home.vue";
+import Teachers from "./views/Teachers/Teachers.vue";
+import About from "./views/About/About.vue";
+import Contact from "./views/Contact/Contact.vue";
+import Courses from "./views/Courses/Courses.vue";
+import Blog from "./views/Blog/Blog.vue";
+import Gallery from "./views/Gallery/Gallery.vue";
 import HTSSNavBar from "./components/Shared/NavBar/NavBar.vue";
 
 Vue.use(Router);
@@ -65,6 +71,60 @@ export default new Router({
       components: {
         header: HTSSNavBar,
         default: Home,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/teachers",
+      name: "teachers",
+      components: {
+        header: HTSSNavBar,
+        default: Teachers,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/about",
+      name: "about",
+      components: {
+        header: HTSSNavBar,
+        default: About,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/blog",
+      name: "blog",
+      components: {
+        header: HTSSNavBar,
+        default: Blog,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      components: {
+        header: HTSSNavBar,
+        default: Contact,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/courses",
+      name: "courses",
+      components: {
+        header: HTSSNavBar,
+        default: Courses,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/gallery",
+      name: "gallery",
+      components: {
+        header: HTSSNavBar,
+        default: Gallery,
         footer: AppFooter
       }
     }

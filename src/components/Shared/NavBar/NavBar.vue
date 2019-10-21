@@ -16,25 +16,25 @@
 
       <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">Home</a>
+          <router-link to="/home" class="nav-link nav-link-icon">Home</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">About</a>
+          <router-link to="/about" class="nav-link nav-link-icon">About</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">Teachers</a>
+          <router-link to="/teachers" class="nav-link nav-link-icon">Teachers</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">Courses</a>
+          <router-link to="/courses" class="nav-link nav-link-icon">Courses</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">Gallery</a>
+          <router-link to="/gallery" class="nav-link nav-link-icon">Gallery</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">Blog</a>
+          <router-link to="/blog" class="nav-link nav-link-icon">Blog</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#">Contact</a>
+          <router-link to="/contact" class="nav-link nav-link-icon">Contact</router-link>
         </li>
       </ul>
     </base-nav>
