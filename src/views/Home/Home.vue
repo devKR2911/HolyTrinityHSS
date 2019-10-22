@@ -139,9 +139,9 @@
               <ul class="list-unstyled mt-5">
                 <li class="py-2">
                   <div class="d-flex align-items-center">
-                    <div>
+                    <!-- <div>
                       <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
-                    </div>
+                    </div>-->
                     <div>
                       <h6 class="mb-0">Safety First</h6>
                       <p
@@ -152,9 +152,9 @@
                 </li>
                 <li class="py-2">
                   <div class="d-flex align-items-center">
-                    <div>
+                    <!-- <div>
                       <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
-                    </div>
+                    </div>-->
                     <div>
                       <h6 class="mb-0">Regular Classes</h6>
                       <p
@@ -165,9 +165,9 @@
                 </li>
                 <li class="py-2">
                   <div class="d-flex align-items-center">
-                    <div>
+                    <!-- <div>
                       <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
-                    </div>
+                    </div>-->
                     <div>
                       <h6 class="mb-0">Certified Teachers</h6>
                       <p
@@ -178,9 +178,9 @@
                 </li>
                 <li class="py-2">
                   <div class="d-flex align-items-center">
-                    <div>
+                    <!-- <div>
                       <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
-                    </div>
+                    </div>-->
                     <div>
                       <h6 class="mb-0">Sports Facilities</h6>
                       <p
@@ -222,25 +222,21 @@
           </div>
           <div class="col-md-6">
             <div class="pl-md-5">
-              <icon name="ni ni-settings" class="mb-5" size="lg" type="warning" shadow rounded></icon>
+              <!-- <icon name="ni ni-settings" class="mb-5" size="lg" type="warning" shadow rounded></icon> -->
 
-              <h3>Our customers</h3>
-              <p class="lead">
-                Don't let your uses guess by attaching tooltips and popoves to any element.
-                Just make sure you enable them first via JavaScript.
-              </p>
-              <p>
+              <h3>Welcome to The Holy Trinity English Medium HSS</h3>
+              <p
+                class="lead"
+              >The Holy Trinity English Medium Higher Secondary School, established in the year 1980 under Malankara orthodox Chruch, Trivandrum Dioscese was contemplated by the idealist L.L His Grace Geevarghese Mar Diascoros, through His Grace's unceasing hard work a school for children with disability was started. Ever since it’s inception, the Institution has always soared through various accreditations, expanding from a L.P School to Higher Secondary School approved by the Kerala State Government in the year 2002...</p>
+              <!-- <p>
                 The kit comes with three pre-built pages to help you get started faster. You can change
                 the text and images and you're good to go.
               </p>
               <p>
                 The kit comes with three pre-built pages to help you get started faster. You can change
                 the text and images and you're good to go.
-              </p>
-              <a href="#" class="font-weight-bold text-warning mt-5">
-                A beautiful UI Kit for impactful
-                websites
-              </a>
+              </p>-->
+              <a href="#" class="font-weight-bold text-warning mt-5">Read More</a>
             </div>
           </div>
         </div>
@@ -257,14 +253,14 @@
       </div>
       <div class="container py-0">
         <div class="row row-grid align-items-center">
-          <div class="col-md-6 order-lg-2 ml-lg-auto">
+          <!-- <div class="col-md-6 order-lg-2 ml-lg-auto">
             <div class="position-relative pl-md-5">
               <img src="img/ill/ill-2.svg" class="img-center img-fluid" />
             </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
+          </div>-->
+          <div class="row">
             <div class="d-flex px-3">
-              <div>
+              <!-- <div>
                 <icon
                   name="ni ni-building"
                   size="lg"
@@ -273,41 +269,62 @@
                   shadow
                   rounded
                 ></icon>
-              </div>
+              </div>-->
               <div class="pl-4">
-                <h4 class="display-3 text-white">Modern Interface</h4>
-                <p class="text-white">
-                  The Arctic Ocean freezes every winter and much of the sea-ice then
-                  thaws every summer, and that process will continue whatever happens.
-                </p>
+                <h4 class="display-3 text-white">Our Facilities</h4>
+                <p
+                  class="text-white"
+                >The school ensures in holistic up building of the students enabling them to be well equipped to face opportunities by providing them with all the facilities such as smart class room, laboratories, library, A.V room and pavilion playground.</p>
               </div>
             </div>
-            <card shadow class="shadow-lg--hover mt-5">
+            <!-- Card 1 -->
+            <card shadow class="shadow-lg--hover mt-5 col-lg-6">
               <div class="d-flex px-3">
                 <div>
                   <icon name="ni ni-satisfied" gradient="success" color="white" shadow rounded></icon>
                 </div>
                 <div class="pl-4">
-                  <h5 class="title text-success">Awesome Support</h5>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-                    every summer, and that process will continue whatever happens.
-                  </p>
+                  <h5 class="title text-success">Arts Lesson</h5>
+                  <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
                   <a href="#" class="text-success">Learn more</a>
                 </div>
               </div>
             </card>
-            <card shadow class="shadow-lg--hover mt-5">
+            <!-- Card 2 -->
+            <card shadow class="shadow-lg--hover mt-5 col-lg-6">
               <div class="d-flex px-3">
                 <div>
                   <icon name="ni ni-active-40" gradient="warning" color="white" shadow rounded></icon>
                 </div>
                 <div class="pl-4">
-                  <h5 class="title text-warning">Modular Components</h5>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-                    every summer, and that process will continue whatever happens.
-                  </p>
+                  <h5 class="title text-warning">Language Lesson</h5>
+                  <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                  <a href="#" class="text-warning">Learn more</a>
+                </div>
+              </div>
+            </card>
+            <!-- Card 3 -->
+            <card shadow class="shadow-lg--hover mt-5 col-lg-6">
+              <div class="d-flex px-3">
+                <div>
+                  <icon name="ni ni-satisfied" gradient="success" color="white" shadow rounded></icon>
+                </div>
+                <div class="pl-4">
+                  <h5 class="title text-success">Music Lesson</h5>
+                  <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+                  <a href="#" class="text-success">Learn more</a>
+                </div>
+              </div>
+            </card>
+            <!-- Card 4 -->
+            <card shadow class="shadow-lg--hover mt-5 col-lg-6">
+              <div class="d-flex px-3">
+                <div>
+                  <icon name="ni ni-active-40" gradient="warning" color="white" shadow rounded></icon>
+                </div>
+                <div class="pl-4">
+                  <h5 class="title text-warning">Sports Lesson</h5>
+                  <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
                   <a href="#" class="text-warning">Learn more</a>
                 </div>
               </div>
@@ -320,15 +337,15 @@
       <div class="container">
         <div class="row justify-content-center text-center mb-lg">
           <div class="col-lg-8">
-            <h2 class="display-3">The amazing Team</h2>
-            <p class="lead text-muted">
+            <h2 class="display-3">Governing Body</h2>
+            <!-- <p class="lead text-muted">
               According to the National Oceanic and Atmospheric Administration,
               Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.
-            </p>
+            </p>-->
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
             <div class="px-4">
               <img
                 v-lazy="'img/theme/team-1-800x800.jpg'"
@@ -337,10 +354,11 @@
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
-                  <span class="d-block mb-1">Ryan Tompson</span>
-                  <small class="h6 text-muted">Web Developer</small>
+                  <span class="d-block mb-1">H.G. Dr. Gabriel Mar Greogorios Metropolitan</span>
+                  <small class="h6 text-muted">President & Manager</small>
+                  <p>Metropolitan of the Diocese of Thiruvananthapuram of the Indian (Malankara) Orthodox Church.</p>
                 </h5>
-                <div class="mt-3">
+                <!-- <div class="mt-3">
                   <base-button
                     tag="a"
                     href="#"
@@ -365,11 +383,11 @@
                     rounded
                     icon-only
                   ></base-button>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
             <div class="px-4">
               <img
                 v-lazy="'img/theme/team-2-800x800.jpg'"
@@ -378,10 +396,11 @@
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
-                  <span class="d-block mb-1">Romina Hadid</span>
-                  <small class="h6 text-muted">Marketing Strategist</small>
+                  <span class="d-block mb-1">Fr. Geevarghese Kaniyantra</span>
+                  <small class="h6 text-muted">Administrator</small>
+                  <p>Ex-Officio, The Holy Trinity EM HSS.</p>
                 </h5>
-                <div class="mt-3">
+                <!-- <div class="mt-3">
                   <base-button
                     tag="a"
                     href="#"
@@ -406,11 +425,11 @@
                     rounded
                     icon-only
                   ></base-button>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <!-- <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="px-4">
               <img
                 v-lazy="'img/theme/team-3-800x800.jpg'"
@@ -429,8 +448,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          </div>-->
+          <!-- <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="px-4">
               <img
                 v-lazy="'img/theme/team-4-800x800.jpg'"
@@ -470,7 +489,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
