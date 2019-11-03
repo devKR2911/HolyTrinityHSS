@@ -1,7 +1,7 @@
 <template>
   <div style="position: relative">
     <base-nav transparent type effect="light" expand>
-      <a class="navbar-brand" href="#">Default Color</a>
+      <a class="navbar-brand" href="#">HTHSS</a>
 
       <div class="row" slot="content-header" slot-scope="{closeMenu}">
         <div class="col-6 collapse-brand">
