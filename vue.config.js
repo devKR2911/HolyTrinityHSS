@@ -1,6 +1,13 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
+  chainWebpack: chainableConfig => {
+    // modify config with webpack-chain
+    // https://github.com/mozilla-neutrino/webpack-chain
+    chainableConfig.resolve.alias
+      .set('@assets', path.resolve(__dirname, './src/assets'));
+  },
   configureWebpack: {
     // Set up all the aliases we use in our app.
     plugins: [
