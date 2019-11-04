@@ -142,7 +142,7 @@ export default {
     },
     methods: {
         getImageSrc(staff) {
-            return '@assets/images/teachers/' + staff.image
+            return require('@assets/images/teachers/' + staff.image);
         }
     },
     watch: {},

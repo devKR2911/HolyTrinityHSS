@@ -25,16 +25,11 @@
               <b-container fluid class="p-4 bg-secondary">
                 <div class="row">
                   <div
-                    class="col-lg-4 col-md-6 col-12"
+                    class="col-lg-2 col-md-4 col-6"
                     v-for="staff in facultiesListOne"
                     :key="staff.id"
                   >
-                    <b-img
-                      src="http://theholytrinityemhss.org/images/Faculties//Staff-Group.jpg"
-                      thumbnail
-                      fluid
-                      alt="Responsive image"
-                    ></b-img>
+                    <b-img :src="getImageSrc(staff)" thumbnail fluid-grow alt="Responsive image"></b-img>
                   </div>
                 </div>
               </b-container>
@@ -42,12 +37,12 @@
               <b-container fluid class="p-4 bg-secondary">
                 <div class="row">
                   <div
-                    class="col-lg-4 col-md-6 col-12"
+                    class="col-lg-2 col-md-4 col-6 image-container"
                     v-for="staff in facultiesListTwo"
                     :key="staff.id"
                   >
-                    <!-- <b-img :src="getImageSrc(staff)" thumbnail fluid alt="Responsive image"></b-img> -->
-                    <img :src="getImageSrc(staff)" alt />
+                    <b-img :src="getImageSrc(staff)" thumbnail fluid-grow alt="Responsive image"></b-img>
+                    <!-- <img :src="getImageSrc(staff)" alt /> -->
                   </div>
                 </div>
               </b-container>
