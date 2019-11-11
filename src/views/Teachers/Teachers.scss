@@ -1,0 +1,30 @@
+.about-background {
+    background-image: url('http://theholytrinityemhss.org/images/bg_2.jpg');
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.staff-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #343a40;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        color: #1eaaf1;
+    }
+}
+
+.designation {
+    font-size: 12px;
+    font-weight: 600;
+    color: #343a40;
+    text-align: center;
+    cursor: pointer;
+}
+
+.title-container {}

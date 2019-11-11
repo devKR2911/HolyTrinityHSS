@@ -1,0 +1,29 @@
+.course-container {
+    // display: flex;
+    // flex-direction: row;
+    padding: 10px 15px;
+}
+
+.course-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px !important;
+}
+
+.course-details {
+    background: #fafafa;
+    padding: 10px 15px;
+}
+
+.course-name {
+    color: #1eaaf1;
+}
+
+.class-time-key {
+    color: #fda638;
+}
+
+.course-desc {
+    color: #8898aa
+}
