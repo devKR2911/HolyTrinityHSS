@@ -2,6 +2,9 @@ export default {
     name: 'Teachers',
     data() {
         return {
+            staffGroupObj: {
+                image: 'Staff-Group.jpg',
+            },
             facultiesListOne: [{
                     id: 0,
                     name: 'Mrs. RUBY MATHAI',

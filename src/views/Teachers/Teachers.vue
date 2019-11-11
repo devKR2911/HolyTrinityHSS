@@ -12,17 +12,13 @@
         <card shadow class="card-profile mt--300" no-body>
           <div class="px-4">
             <div class="text-center mt-4">
-              <b-img
-                src="http://theholytrinityemhss.org/images/Faculties//Staff-Group.jpg"
-                fluid-grow
-                alt="Responsive image"
-              ></b-img>
+              <b-img :src="getImageSrc(staffGroupObj)" fluid-grow alt="Responsive image"></b-img>
             </div>
             <div class="text-center mt-5">
               <h4>2019 Faculties</h4>
             </div>
             <div class="mt-5 py-5 border-top text-justify">
-              <b-container fluid class="p-4 bg-secondary">
+              <b-container fluid class="p-4">
                 <div class="row">
                   <div
                     class="col-lg-2 col-md-4 col-6"
@@ -30,11 +26,15 @@
                     :key="staff.id"
                   >
                     <b-img :src="getImageSrc(staff)" thumbnail fluid-grow alt="Responsive image"></b-img>
+                    <div class="title-container">
+                      <p class="staff-name">{{staff.name}}</p>
+                      <p class="designation">{{staff.designation}}</p>
+                    </div>
                   </div>
                 </div>
               </b-container>
 
-              <b-container fluid class="p-4 bg-secondary">
+              <b-container fluid class="p-4">
                 <div class="row">
                   <div
                     class="col-lg-2 col-md-4 col-6 image-container"
@@ -43,6 +43,10 @@
                   >
                     <b-img :src="getImageSrc(staff)" thumbnail fluid-grow alt="Responsive image"></b-img>
                     <!-- <img :src="getImageSrc(staff)" alt /> -->
+                    <div class="title-container">
+                      <p class="staff-name">{{staff.name}}</p>
+                      <p class="designation">{{staff.designation}}</p>
+                    </div>
                   </div>
                 </div>
               </b-container>
